@@ -1,16 +1,46 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { GuardService } from './guard.service';
 
 import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+import { PatientsComponent } from './patients/patients.component';
+import { HistoriesComponent } from './histories/histories.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { NewUserComponent } from './new-user/new-user.component';
+import { Router2Module } from './router2/router2.module';
+import { NavComponent } from './nav/nav.component';
+import { HeaderComponent } from './header/header.component' ;
+import { StateManagerService } from './state-manager.service';
+import { LogeadoComponent } from './logeado/logeado.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { HistoriesDetailsComponent } from './histories-details/histories-details.component';
+import { GetNameFromUidPipe } from './get-name-from-uid.pipe';
+import { ApiService } from './api.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    PatientsComponent,
+    HistoriesComponent,
+    DashboardComponent,
+    NewUserComponent,
+    NavComponent,
+    HeaderComponent,
+    LogeadoComponent,
+    UserDetailsComponent,
+    HistoriesDetailsComponent,
+    GetNameFromUidPipe,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    Router2Module,
+    FormsModule,
   ],
-  providers: [],
+  providers: [GuardService, StateManagerService,ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

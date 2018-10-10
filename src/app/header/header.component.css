@@ -1,0 +1,17 @@
+* {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    height: 80px;
+    
+}
+
+head{
+    display:flex;
+    flex-direction: row;
+    background-color: rgb(2, 175, 255, 0.3);
+
+}

@@ -1,0 +1,13 @@
+<div class="histories">
+  <h4> · Historias clínicas ·</h4>
+  <div id="lista">
+    <div *ngFor="let i of patients">
+      <div class="historiaClinica" *ngIf="i.role==='patient'">
+        <h5>{{i.name}}</h5>
+        <div *ngFor="let x of i.historiesIds">
+          {{x}}
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>

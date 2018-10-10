@@ -1,0 +1,29 @@
+.histories {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 500px;
+    border: solid 0.5px;
+    border-color: rgb(0, 132, 255, 0.5);
+    background: rgba(255, 255, 255, 0.3);
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+h4 {
+    font-size: 22px;
+    text-align: center;
+    color: rgb(0, 0, 100);
+    font-weight: bold;
+}
+.historiaClinica {
+    padding:10px;
+}
+.titulosTabla{
+    font-size: 18px;
+    display: flex;
+}
+h5 {
+    font-size: 18px;
+    color: rgb(0, 0, 100);
+    font-weight: bold;
+}

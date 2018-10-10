@@ -1,0 +1,25 @@
+<div>{{this.patients}}</div>
+<div class="histories">
+  <h4> Pacientes </h4>
+  <div *ngFor="let item of users">
+    <div *ngIf="item.role=='patient'">
+      <div class="historiaClinica">
+        <table>
+          <tr class='titulosTabla'>
+            <td>Name</td>
+            <td>ROL</td>
+            <td>
+              <p style="text-align:center">Acciones</p>
+            </td>
+          </tr>
+          <tr>
+            <td>{{item.name}}</td>
+            <td>{{item.role}}</td>
+            <td><button [routerLink]="['/histories/', item.uid]" >Ver Historia Clínica</button>
+              <button [routerLink]="['/user/', item.uid]"> Ver perfil</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  </div>

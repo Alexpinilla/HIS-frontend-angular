@@ -1,0 +1,11 @@
+<div class="login">
+  <form #loginForm="ngForm" class="formulario" (ngSubmit)="this.stateManager.loginForm(loginForm)">
+    <h4>Usuario:</h4>
+    <input name="usuario" #usuario="ngModel" id="usuario" required placeholder="Introduce tu nombre de usuario" type="text"
+      [(ngModel)]="modelUsuario">
+    <div [hidden]="usuario.valid || usuario.pristine" class="required">Se requiere el nombre de usuario</div>
+    <h4>Contraseña:</h4>
+    <input name="pass" id="pass" required placeholder="Introduce tu contraseña" type="password" [(ngModel)]="modelPass">
+    <button>Iniciar sesión</button>
+  </form>
+</div>

@@ -1,0 +1,32 @@
+<div class="login">
+  <h3>Registro de usuarios</h3>
+  <form #registerForm="ngForm" class="formulario" (ngSubmit)="this.stateManager.registerForm(registerForm)">
+      <h4>Rol:</h4>
+      <input name="role" #role="ngModel" id="role" required placeholder="Introduce el rol" type="text"
+      [(ngModel)]="modelRole">
+    <div [hidden]="role.valid || role.pristine" class="required">Se requiere el nombre de usuario</div>      
+      <h4>UID:</h4>
+      <input name="uid" #uid="ngModel" id="uid" required placeholder="Introduce la uid" type="text"
+      [(ngModel)]="modelUid">
+    <div [hidden]="uid.valid || uid.pristine" class="required">Se requiere el nombre de usuario</div>      
+      <h4>Nombre:</h4>
+      <input name="name" #name="ngModel" id="name" required placeholder="Introduce el nombre del usuario" type="text"
+      [(ngModel)]="modelName">
+    <div [hidden]="name.valid || name.pristine" class="required">Se requiere el nombre de usuario</div>      
+      <h4>Apellido:</h4>
+      <input name="surname" #surname="ngModel" id="surname" required placeholder="Introduce el apellido" type="text"
+      [(ngModel)]="modelSurname">
+    <div [hidden]="surname.valid || surname.pristine" class="required">Se requiere el nombre de usuario</div>      
+      <h4>Dni:</h4>
+      <input name="dni" #dni="ngModel" id="dni" required placeholder="Introduce el dni" type="text"
+      [(ngModel)]="modelDni">
+    <div [hidden]="dni.valid || dni.pristine" class="required">Se requiere el nombre de usuario</div>      
+    <h4>Usuario:</h4>
+    <input name="usuario" #usuario="ngModel" id="usuario" required placeholder="Introduce tu nombre de usuario" type="text"
+      [(ngModel)]="modelUsuario">
+    <div [hidden]="usuario.valid || usuario.pristine" class="required">Se requiere el nombre de usuario</div>
+    <h4>Contraseña:</h4>
+    <input name="pass" id="pass" required placeholder="Introduce tu contraseña" type="password" [(ngModel)]="modelPass">
+    <button>Registro</button>
+  </form>
+</div>

@@ -1,0 +1,16 @@
+<div class="histories">
+    <h4>Historía Clinicas</h4>
+    <div class="titulosTabla">
+        <h5>Paciente: &nbsp; </h5>{{this.stateManager.getNamesFromUid(uidHistory)}}
+    </div>
+    <div class="titulosTabla">
+        <h5>Sip: &nbsp;</h5>{{this.stateManager.getSipFromUid(uidHistory)}}
+    </div>
+    <br>
+    <div *ngFor="let item of array">
+        <div class="historiaClinica">
+            {{item}}
+        </div>
+        <br>
+    </div>
+</div>

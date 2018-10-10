@@ -1,0 +1,10 @@
+<div class="fondoNav">
+<ul class="menuItem">
+  <li><a routerLink="/histories">{{this.stateManager.historiesNav()}}</a></li>
+  <li><a routerLink="/patients">{{this.stateManager.patientsNav()}}</a></li>
+  <li><a routerLink="/new-user">{{this.stateManager.newUserNav()}}</a></li>
+  <li><a routerLink="/dashboard">{{this.stateManager.miHistoria()}}</a></li>
+  <li><a routerLink="/profile" id="alex" class="{{this.stateManager.claseLocal()}}"><img id="alexIcon" class="userIcon"
+        src="{{this.stateManager.claseImagenLocal()}}">{{this.stateManager.local()}}</a></li>
+</ul>
+</div>
