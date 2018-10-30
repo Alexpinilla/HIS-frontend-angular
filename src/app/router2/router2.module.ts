@@ -15,10 +15,7 @@ import { HistoriesDetailsComponent } from '../histories-details/histories-detail
 const routes: Routes = [{
   path: '',
   component: LoginComponent,
-}, {
-  path: 'dashboard',
-  component: DashboardComponent,
-}, {
+},{
   path: 'histories',
   component: HistoriesComponent,
   canActivate: [HistoriesGuardService]

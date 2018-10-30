@@ -11,13 +11,14 @@ import { ApiService } from '../api.service';
 })
 export class UserDetailsComponent {
 
-  arrayUser: {}
+  arrayUser: any
   uidUser;
   constructor(private ruta: ActivatedRoute, private stateManager: StateManagerService, private api: ApiService) {
-    this.ruta.params.subscribe(params =>{
-    this.uidUser = (params['uid'])
-    this.arrayUser = this.stateManager.getUserFromUid(this.uidUser)
-    console.log(this.arrayUser)
+    this.ruta.params.subscribe(params => {
+      this.uidUser = (params['uid'])
+      this.arrayUser = this.stateManager.getUserFromUid(this.uidUser)
+      console.log(this.arrayUser)
     })
   }
+  name; surname; dni; username; role; sip
 }

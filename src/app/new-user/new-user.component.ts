@@ -10,9 +10,16 @@ export class NewUserComponent implements OnInit {
 
   roles = ['admin', 'patient', 'doctor', 'technical'];
 
-  constructor(private stateManager: StateManagerService) { }
+  constructor(public stateManager: StateManagerService) { }
 
   ngOnInit() {
   }
-
+  modelRole;
+  modelUid;
+  modelName;
+  modelSurname;
+  modelDni;
+  modelUsuario;
+  modelPass;
+  
 }

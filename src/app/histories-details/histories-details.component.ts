@@ -12,7 +12,7 @@ export class HistoriesDetailsComponent implements OnInit {
 
   uidHistory;
   array: string[];
-  constructor(private ruta: ActivatedRoute, private stateManager: StateManagerService, private api: ApiService) {
+  constructor(private ruta: ActivatedRoute, public stateManager: StateManagerService, private api: ApiService) {
     this.ruta.params.subscribe(params =>{
       this.uidHistory = (params['uid'])
       this.array = this.stateManager.getHistoriesIds(this.uidHistory)

@@ -14,5 +14,6 @@ export class PatientsComponent {
   constructor(private stateManager: StateManagerService, private api: ApiService  ) {
   }
   users = this.api.users;
+  patients;
 
 }

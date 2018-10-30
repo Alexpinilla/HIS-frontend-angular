@@ -9,7 +9,7 @@ import { StateManagerService } from '../state-manager.service';
 })
 export class NavComponent {
 
-  constructor(private stateManager: StateManagerService) {
+  constructor(public stateManager: StateManagerService) {
   }
 
 }
