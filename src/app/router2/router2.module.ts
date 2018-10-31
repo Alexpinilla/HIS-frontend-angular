@@ -15,7 +15,6 @@ import { HistoriesDetailsComponent } from '../histories-details/histories-detail
 const routes: Routes = [{
   path: '',
   component: LoginComponent,
-  pathMatch: 'full'
 },{
   path: 'histories',
   component: HistoriesComponent,
