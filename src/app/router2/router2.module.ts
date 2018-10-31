@@ -13,24 +13,24 @@ import { UserDetailsComponent } from '../user-details/user-details.component';
 import { HistoriesDetailsComponent } from '../histories-details/histories-details.component';
 
 const routes: Routes = [{
-  path: '',
+  path: '/',
   component: LoginComponent,
 },{
-  path: 'histories',
+  path: '/histories',
   component: HistoriesComponent,
   canActivate: [HistoriesGuardService]
 },{
-  path: 'histories/:uid',
+  path: '/histories/:uid',
   component: HistoriesDetailsComponent,
 },{
-  path: 'user/:uid',
+  path: '/user/:uid',
   component: UserDetailsComponent,
 },{
-  path: 'patients',
+  path: '/patients',
   component: PatientsComponent,
   canActivate: [PatientsGuardService]
 }, {
-  path: 'new-user',
+  path: '/new-user',
   component: NewUserComponent,
 }]
 
