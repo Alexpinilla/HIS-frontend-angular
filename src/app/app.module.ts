@@ -18,6 +18,7 @@ import { UserDetailsComponent } from './user-details/user-details.component';
 import { HistoriesDetailsComponent } from './histories-details/histories-details.component';
 import { GetNameFromUidPipe } from './get-name-from-uid.pipe';
 import { ApiService } from './api.service';
+import { HashLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import { ApiService } from './api.service';
     Router2Module,
     FormsModule,
   ],
-  providers: [GuardService, StateManagerService,ApiService],
+  providers: [GuardService, StateManagerService,ApiService,HashLocationStrategy],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
