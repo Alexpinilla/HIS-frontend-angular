@@ -15,6 +15,7 @@ import { HistoriesDetailsComponent } from '../histories-details/histories-detail
 const routes: Routes = [{
   path: '',
   component: LoginComponent,
+  pathMatch: 'full'
 },{
   path: 'histories',
   component: HistoriesComponent,
@@ -37,7 +38,7 @@ const routes: Routes = [{
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes, {onSameUrlNavigation: 'reload'})
+    RouterModule.forRoot(routes, {enableTracing: true})
 
   ],
   exports: [ RouterModule],
