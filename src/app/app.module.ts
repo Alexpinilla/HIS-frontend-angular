@@ -19,6 +19,8 @@ import { HistoriesDetailsComponent } from './histories-details/histories-details
 import { GetNameFromUidPipe } from './get-name-from-uid.pipe';
 import { ApiService } from './api.service';
 import { HashLocationStrategy } from '@angular/common';
+import { MiHistoriaComponent } from './mi-historia/mi-historia.component';
+import { MiPerfilComponent } from './mi-perfil/mi-perfil.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { HashLocationStrategy } from '@angular/common';
     UserDetailsComponent,
     HistoriesDetailsComponent,
     GetNameFromUidPipe,
+    MiHistoriaComponent,
+    MiPerfilComponent,
   ],
   imports: [
     BrowserModule,

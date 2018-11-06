@@ -12,7 +12,8 @@ export class HistoriesComponent implements OnInit{
 
 
   constructor(private stateManager: StateManagerService, private api: ApiService ) {
-    
+    localStorage.setItem('ocultar', 'oculto')
+
   }
    
   patients = this.api.patients;

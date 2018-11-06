@@ -16,6 +16,7 @@ export class HistoriesDetailsComponent implements OnInit {
     this.ruta.params.subscribe(params =>{
       this.uidHistory = (params['uid'])
       this.array = this.stateManager.getHistoriesIds(this.uidHistory)
+      localStorage.setItem('ocultar', 'oculto')
     })
   }
   usuario = this.stateManager.getNameFromUid(this.uidHistory);

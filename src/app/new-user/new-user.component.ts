@@ -10,7 +10,9 @@ export class NewUserComponent implements OnInit {
 
   roles = ['admin', 'patient', 'doctor', 'technical'];
 
-  constructor(public stateManager: StateManagerService) { }
+  constructor(public stateManager: StateManagerService) { 
+    localStorage.setItem('ocultar', 'oculto')
+  }
 
   ngOnInit() {
   }

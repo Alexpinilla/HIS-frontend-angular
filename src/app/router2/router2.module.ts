@@ -11,6 +11,8 @@ import { HistoriesGuardService } from '../histories-guard.service';
 import { PatientsGuardService } from '../patients-guard.service';
 import { UserDetailsComponent } from '../user-details/user-details.component';
 import { HistoriesDetailsComponent } from '../histories-details/histories-details.component';
+import { MiHistoriaComponent } from '../mi-historia/mi-historia.component';
+import { MiPerfilComponent } from '../mi-perfil/mi-perfil.component';
 
 const routes: Routes = [{
   path: '',
@@ -30,7 +32,13 @@ const routes: Routes = [{
   path: 'patients',
   component: PatientsComponent,
   canActivate: [PatientsGuardService]
-}, {
+},{
+  path: 'mi-historia',
+  component: MiHistoriaComponent,
+},{
+  path: 'profile',
+  component: MiPerfilComponent
+},{
   path: 'new-user',
   component: NewUserComponent,
 }]

@@ -25,6 +25,7 @@ export class StateManagerService {
       localStorage.setItem("conectado", "true");
       localStorage.setItem("claseUsuario", "user")
       localStorage.setItem("claseImagenUsuario", "assets/userIcon.png")
+      localStorage.setItem('uidUser', itemUsuario.uid)
       this.state.auth = form.value.usuario;
       this.logeado = 'logeado';
       var a = document.getElementById("alex")
@@ -136,6 +137,9 @@ export class StateManagerService {
     else {
       return 'oculto'
     }
+  }
+  ocultar(){
+    return localStorage.getItem('ocultar')
   }
 
 }

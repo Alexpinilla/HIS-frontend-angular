@@ -12,6 +12,8 @@ import { ApiService } from '../api.service'
 export class PatientsComponent {
 
   constructor(private stateManager: StateManagerService, private api: ApiService  ) {
+    localStorage.setItem('ocultar', 'oculto')
+
   }
   users = this.api.users;
   patients;
