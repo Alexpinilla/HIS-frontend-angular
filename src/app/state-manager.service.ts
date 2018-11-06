@@ -129,4 +129,13 @@ export class StateManagerService {
       return 'login'
     }
   }
+  bienvenido(){
+    if(localStorage.getItem('conectado')=='true'){
+      return 'bienvenido'
+    }
+    else {
+      return 'oculto'
+    }
+  }
+
 }
