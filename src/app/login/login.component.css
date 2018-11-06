@@ -66,3 +66,6 @@ button:hover {
   padding-top: 3px;
   padding-bottom: 3px;
 }
+.oculto{
+  display:none;
+}

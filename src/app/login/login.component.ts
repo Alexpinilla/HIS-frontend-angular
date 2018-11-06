@@ -13,8 +13,9 @@ import { LogeadoComponent} from '../logeado/logeado.component';
 })
 export class LoginComponent {
 
-
+  
   constructor(public stateManager: StateManagerService) { 
+
      }
      modelUsuario;
      modelPass;

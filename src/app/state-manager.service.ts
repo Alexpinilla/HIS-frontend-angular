@@ -121,4 +121,12 @@ export class StateManagerService {
   getUserFromUid(uid){
     return this.api.users.find(user => user.uid === uid)
   }
+  comprobacionLogeado(){
+    if(localStorage.getItem('conectado')=='true'){
+      return 'oculto'
+    }
+    else {
+      return 'login'
+    }
+  }
 }

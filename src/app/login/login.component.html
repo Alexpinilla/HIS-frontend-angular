@@ -1,4 +1,4 @@
-<div class="login">
+<div class="{{this.stateManager.comprobacionLogeado()}}" >
   <form #loginForm="ngForm" class="formulario" (ngSubmit)="this.stateManager.loginForm(loginForm)">
     <h4>Usuario:</h4>
     <input name="usuario" #usuario="ngModel" id="usuario" required placeholder="Introduce tu nombre de usuario" type="text"
