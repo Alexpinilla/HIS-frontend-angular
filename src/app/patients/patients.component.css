@@ -36,3 +36,8 @@ button {
   button:hover {
     background: rgb(0, 132, 255, 0.7);
   }
+  @media(max-width: 600px){
+    .histories {
+        margin: 10px;
+    }
+}

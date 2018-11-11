@@ -13,6 +13,7 @@ export class MiPerfilComponent {
   uidUser = localStorage.getItem('uidUser')
   constructor(private stateManager: StateManagerService, private api: ApiService) {
       this.arrayUser = this.stateManager.getUserFromUid(this.uidUser)
+      localStorage.setItem('ocultar', 'oculto')
     
   }
   name; surname; dni; username; role; sip

@@ -69,3 +69,8 @@ button:hover {
 .oculto{
   display:none;
 }
+@media(max-width: 420px){
+  .login {
+      margin: 10px;
+  }
+}

@@ -13,7 +13,6 @@ import { Router2Module } from './router2/router2.module';
 import { NavComponent } from './nav/nav.component';
 import { HeaderComponent } from './header/header.component' ;
 import { StateManagerService } from './state-manager.service';
-import { LogeadoComponent } from './logeado/logeado.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { HistoriesDetailsComponent } from './histories-details/histories-details.component';
 import { GetNameFromUidPipe } from './get-name-from-uid.pipe';
@@ -32,7 +31,7 @@ import { MiPerfilComponent } from './mi-perfil/mi-perfil.component';
     NewUserComponent,
     NavComponent,
     HeaderComponent,
-    LogeadoComponent,
+    
     UserDetailsComponent,
     HistoriesDetailsComponent,
     GetNameFromUidPipe,

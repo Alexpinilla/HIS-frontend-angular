@@ -19,3 +19,8 @@ h4 {
     color: rgb(0, 0, 100);
     font-weight: bold;
 }
+@media(max-width: 600px){
+    .histories {
+        margin: 10px;
+    }
+}
